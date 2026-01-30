@@ -106,6 +106,14 @@ a:hover{
   color: #e53935;
   padding-left: 50px; 
 }
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+.logo-link:hover {
+  opacity: 0.9;
+}
+
 
 /* NAV */
 
