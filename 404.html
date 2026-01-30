@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Страница не найдена — ВОСЭЛЕКТРОСТРОЙ</title>
+  <meta name="description" content="Запрашиваемая страница не найдена. Перейдите на главную страницу сайта ВОСЭЛЕКТРОСТРОЙ." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header" id="top">
+  <div class="container header__row">
+    <img src="img/logo.png" alt="ВОСЭЛЕКТРОСТРОЙ" class="logo">
+
+    <nav class="nav" aria-label="Основная навигация">
+      <button class="nav__toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="nav__burger" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="production.html">Производство НКУ</a></li>
+        <li><a href="solutions.html">Решения</a></li>
+        <li><a href="projects.html">Объекты</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="header_contacts">
+      <a class="header_tel" href="tel:+78003005653">+7 (800) 300-56-53</a>
+      <a class="header_mail" href="mailto:voselectrostroi@yandex.ru">voselectrostroi@yandex.ru</a>
+      <div class="header_hours">пн–пт: 09:00–18:00</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 404 -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="notfound">
+        <div class="notfound__code">404</div>
+        <h1 class="notfound__title">Страница не найдена</h1>
+        <p class="notfound__text">
+          К сожалению, запрашиваемая страница не существует или была перемещена.
+          Возможно, вы перешли по устаревшей ссылке или допустили ошибку в адресе.
+        </p>
+
+        <div class="btn-row">
+          <a href="index.html" class="btn">На главную</a>
+          <a href="contacts.html" class="btn btn--ghost">Связаться с нами</a>
+        </div>
+
+        <div class="notfound__links">
+          <span>Полезные разделы:</span>
+          <a href="production.html">Производство НКУ</a>
+          <a href="solutions.html">Решения</a>
+          <a href="projects.html">Объекты</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__row">
+    <div class="footer__left">
+      <div class="footer__brand">ООО «ВОСЭЛЕКТРОСТРОЙ»</div>
+      <div class="footer__muted">© 2014–2026. Низковольтные комплектные устройства и электроснабжение.</div>
+    </div>
+
+    <ul class="footer__nav">
+      <li><a href="about.html">О компании</a></li>
+      <li><a href="production.html">Производство</a></li>
+      <li><a href="projects.html">Объекты</a></li>
+      <li><a href="docs.html">Документы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+    <a class="to-top" href="#top" aria-label="Наверх">↑</a>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector(".nav__toggle");
+  const list = document.querySelector(".nav__list");
+
+  toggle?.addEventListener("click", () => {
+    const isOpen = list.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  list?.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (!a) return;
+    list.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
+</script>
+</body>
+</html>
