@@ -22,8 +22,9 @@
         <li><a href="about.html">О компании</a></li>
         <li><a href="production.html">Производство НКУ</a></li>
         <li><a href="solutions.html">Решения</a></li>
-        <li><a href="projects.html">Объекты</a></li>
+        <!-- <li><a href="projects.html">Объекты</a></li> -->
         <li><a href="blog.html">Блог</a></li>
+        <li><a href="docs.html">Документы</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
@@ -126,35 +127,39 @@
       </div>
 
       <div class="grid grid--4">
-        <div class="card card7">
+        <a class="card card--link card7" href="/solutions.html#industry">
           <h3>Промышленные предприятия</h3>
           <p>Силовые НКУ, распределительные и управляющие шкафы, модернизация существующих щитов.</p>
-        </div>
-        <div class="card card8">
+          <span class="card__more">Подробнее →</span>
+        </a>
+        <a class="card card--link card8" href="/solutions.html#commercial">
           <h3>Коммерческая недвижимость</h3>
           <p>Бизнес-центры, склады, торговые объекты — комплексные решения по электроснабжению и освещению.</p>
-        </div>
-        <div class="card card9">
+          <span class="card__more">Подробнее →</span>
+        </a>
+        <a class="card card--link card9" href="/solutions.html#residential">
           <h3>Жилые комплексы</h3>
           <p>Щиты учёта, этажные щиты, решения для общедомовых нужд, освещение парковок и дворов.</p>
-        </div>
-        <div class="card card10">
+          <span class="card__more">Подробнее →</span>
+        </a>
+        <a class="card card--link card10" href="/solutions.html#infrastructure">
           <h3>Инфраструктура и муниципальные объекты</h3>
           <p>Образовательные учреждения, медучреждения, спортивные и культурные объекты.</p>
-        </div>
+          <span class="card__more">Подробнее →</span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="section section--alt" id="projects">
+  <!-- <section class="section section--alt" id="projects">
     <div class="container">
       <div class="section__head">
         <div>
           <h2>Реализованные объекты</h2>
           <p>Несколько примеров проектов, в рамках которых мы поставляли НКУ и электротехническое оборудование.</p>
         </div>
-        <a href="#" class="btn btn--ghost">Смотреть все объекты</a>
+        <a href="projects.html" class="btn btn--ghost">Смотреть все объекты</a>
       </div>
 
       <div class="grid grid--3">
@@ -175,10 +180,10 @@
         </article>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- BRANDS -->
-  <section class="section" id="brands">
+  <section class="section--alt" id="brands">
     <div class="container">
       <div class="section__head">
         <div>
@@ -188,7 +193,7 @@
       </div>
 
       <div class="grid grid--4">
-        <!-- Здесь позже можно поставить логотипы -->
+        <!-- Здесь позже поставить логотипы -->
         <div class="mini"><span>ABB</span><em>аппаратура НН</em></div>
         <div class="mini"><span>Schneider Electric</span><em>НКУ и автоматика</em></div>
         <div class="mini"><span>Siemens</span><em>компоненты и автоматика</em></div>
@@ -202,7 +207,7 @@
   </section>
 
   <!-- DOCS -->
-  <section class="section section--alt" id="docs">
+  <section class="section section" id="docs">
     <div class="container">
       <div class="section__head">
         <div>
@@ -210,28 +215,27 @@
           <p>Поддерживаем полный пакет документов по производству, поставкам и качеству продукции.</p>
         </div>
       </div>
-
       <div class="grid grid--2">
-        <div class="card">
+        <a class="card card--link" href="/docs.html">
           <h3>Сертификация и соответствие</h3>
           <p>
             Декларации соответствия, сертификаты на продукцию, протоколы испытаний.
             По запросу предоставляем комплект документов по каждому проекту.
           </p>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card card--link" href="/docs.html">
           <h3>Проектная и исполнительная документация</h3>
           <p>
             Схемы, спецификации, щитовые ведомости, паспорта изделий и инструкции по эксплуатации —
             вся необходимая документация для ввода в эксплуатацию и обслуживания.
           </p>
-        </div>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- REQUEST FORM -->
-  <section class="section" id="request">
+  <section class="section--alt" id="request">
     <div class="container">
       <div class="request">
         <div class="request__text">
@@ -267,76 +271,90 @@
 
           <!-- Загрузку файлов потом можно реализовать через backend -->
           <button class="btn btn--full" type="submit">Отправить</button>
-          <p class="form__hint">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+          <p class="form__hint">
+            Нажимая кнопку, вы соглашаетесь с 
+            <a class="form__hint" href="privacy.html">политикой обработки персональных данных.</a>
+          </p> 
         </form>
       </div>
     </div>
   </section>
 
   <!-- CONTACTS PREVIEW -->
-<section class="section" id="contacts">
-  <div class="container contacts">
-    <!-- Левая колонка: данные -->
-    <div class="contacts__info">
-      <h2 class="contacts__title">Связаться с нами</h2>
+  <!-- КАРТА -->
+  <section class="section section">
+    <div class="container contacts">
+      <div class="contacts__info">
+        <h2>Как нас найти</h2>
+        <p>
+          Офис и производственные мощности расположены в Воскресенске. Уточнить точный адрес, схему
+          проезда и режим отгрузки вы можете по телефону или электронной почте.
+        </p>
 
-      <div class="contacts__item">
-        <div class="contacts__icon">
-          <span class="contacts__icon-symbol">📍</span>
+        <div class="contacts__item">
+          <div class="contacts__icon">
+            <span class="contacts__icon-symbol">📍</span>
+          </div>
+          <div>
+            <div class="contacts__label">Адрес</div>
+            <div class="contacts__value contacts__value--strong">
+              г. Воскресенск, Московская область
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="contacts__label">Адрес</div>
-          <div class="contacts__value contacts__value--strong">
-            г. Воскресенск
+
+        <div class="contacts__item">
+          <div class="contacts__icon">
+            <span class="contacts__icon-symbol">📞</span>
+          </div>
+          <div>
+            <div class="contacts__label">Телефон</div>
+            <div class="contacts__value contacts__value--strong">
+              <a href="tel:+78003005653">+7 (800) 300-56-53</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts__item">
+          <div class="contacts__icon">
+            <span class="contacts__icon-symbol">✉</span>
+          </div>
+          <div>
+            <div class="contacts__label">Электронная почта</div>
+            <div class="contacts__value contacts__value--strong">
+              <a href="mailto:voselectrostroi@yandex.ru">voselectrostroi@yandex.ru</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts__item">
+          <div class="contacts__icon">
+            <span class="contacts__icon-symbol">🕒</span>
+          </div>
+          <div>
+            <div class="contacts__label">Режим работы</div>
+            <div class="contacts__value">
+              пн–пт: 09:00–18:00<br>сб–вс: выходной
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="contacts__item">
-        <div class="contacts__icon">
-          <span class="contacts__icon-symbol">📞</span>
-        </div>
-        <div>
-          <div class="contacts__label">Телефон</div>
-          <div class="contacts__value contacts__value--strong">
-            <a href="tel:+78003005653">+7 (800) 300-56-53</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="contacts__item">
-        <div class="contacts__icon">
-          <span class="contacts__icon-symbol">✉</span>
-        </div>
-        <div>
-          <div class="contacts__label">Электронная почта</div>
-          <div class="contacts__value contacts__value--strong">
-            <a href="mailto:voszhilstroi@yandex.ru">voszhilstroi@yandex.ru</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="contacts__socials">
-        <a class="contacts__social contacts__social--wa" href="#" aria-label="WhatsApp"></a>
-        <a class="contacts__social contacts__social--tg" href="#" aria-label="Telegram"></a>
+      <div class="contacts__map">
+        <!-- Карта Яндекс с меткой Воскресенска.
+             При желании можешь заменить src на код из конструктора. -->
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=38.6738%2C55.3173&z=13&pt=38.6738,55.3173,pm2gnm"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allowfullscreen="true"
+          style="border:0;"
+          aria-label="Карта: Воскресенск">
+        </iframe>
       </div>
     </div>
-
-    <!-- Правая колонка: карта -->
-    <div class="contacts__map">
-    <iframe
-        src="https://yandex.ru/map-widget/v1/?ll=38.6738%2C55.3173&z=12&pt=38.6738,55.3173,pm2gnm"
-        width="100%"
-        height="100%"
-        frameborder="0"
-        allowfullscreen="true"
-        style="border:0;"
-        aria-label="Карта: Воскресенск">
-    </iframe>
-    </div>
-
-  </div>
-</section>
+  </section>
 
 
 <footer class="footer">
@@ -348,7 +366,7 @@
 
     <ul class="footer__nav">
       <li><a href="about.html">О компании</a></li>
-      <li><a href="projects.html">Объекты</a></li>
+      <li><a href="solutions.html">Решения</a></li>
       <li><a href="production.html">Производство</a></li>
       <li><a href="contacts.html">Контакты</a></li>
       <li><a href="docs.html">Документы</a></li>
