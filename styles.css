@@ -79,6 +79,7 @@ a:hover{
   object-fit: contain;
   background: transparent;
   flex-shrink: 0;
+  /* border-radius: 5; */
 }
 .logo-link {
   display: inline-flex;
