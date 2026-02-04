@@ -27,6 +27,11 @@
 
 html{ scroll-behavior: smooth; }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body{
   margin:0;
   width: 100%;
@@ -1206,5 +1211,67 @@ dd{
 @media (max-width: 600px) {
   .banner {
     padding: 20px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .footer__nav {
+    flex-wrap: wrap;          /* разрешаем перенос строк */
+    row-gap: 6px;
+  }
+  .footer__nav li {
+    margin-right: 16px;       /* небольшие отступы между пунктами */
+  }
+  .footer__nav a {
+    white-space: normal;      /* вдруг где-то стоит nowrap */
+  }
+}
+
+/* АДАПТИВ ДЛЯ ХЕДЕРА */
+
+@media (max-width: 768px) {
+  .header__row {
+    flex-wrap: wrap;          /* позволяем элементам переноситься */
+    align-items: flex-start;
+    gap: 8px 16px;
+  }
+
+  /* Лого поменьше, чтобы не съедало полэкрана */
+  .logo {
+    max-width: 180px;
+    height: auto;
+  }
+
+  /* Навигация (бургер) справа от логотипа */
+  .nav {
+    margin-left: auto;
+  }
+
+  /* Контакты под логотипом и бургером, на всю ширину */
+  .header_contacts {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .header_tel,
+  .header_mail,
+  .header_hours {
+    display: block;
+  }
+}
+
+/* если очень маленькие экраны, ещё чуть уменьшим шрифт */
+@media (max-width: 480px) {
+  .header_contacts {
+    font-size: 12px;
   }
 }
