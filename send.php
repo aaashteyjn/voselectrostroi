@@ -1,6 +1,6 @@
 <?php
 // Куда отправляем
-$to = "dashalyusina@yandex.ru";
+$to = "voselectrostroi@yandex.ru";
 
 // Тема письма
 $subject = "Заявка с сайта ВОСЭЛЕКТРОСТРОЙ";
@@ -24,7 +24,7 @@ $message
 ";
 
 // Заголовки
-$headers = "From: no-reply@voselectrostroy.ru\r\n";
+$headers = "From: no-reply@voselectrostroi.ru\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
